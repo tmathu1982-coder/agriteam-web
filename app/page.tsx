@@ -2,10 +2,10 @@ import Image from "next/image";
 import { Phone, MapPin, Mail, Leaf, Info } from "lucide-react"; 
 
 export default function Home() {
-  const hotline = "0822178246";
-  const hotlineDisplay = "082.217.8246";
+  const hotline = "0902590480";
+  const hotlineDisplay = "0902.590.480";
 
-  // Dữ liệu 2 sản phẩm Mật rỉ đường theo đúng file Word
+  // Dữ liệu 2 sản phẩm Mật rỉ đường
   const products = [
     {
       id: 1,
@@ -13,7 +13,7 @@ export default function Home() {
       subName: "(Đường 45%)",
       category: "Xử Lý Nước Công Nghiệp",
       weight: "30 lít / Can",
-      image: "/products/mat-ri-70.jpg", // Trò đổi tên file ảnh cho khớp nhé
+      image: "/products/mat-ri-70.jpg", 
       ingredients: "Sucrose, glucose, fructose. Chất khô ~75% carbohydrate, Nước ~22%.",
       usage: [
         "Xử lý kỵ khí: Bổ sung cacbon cho vi sinh vật yếm khí phân hủy chất hữu cơ.",
@@ -26,7 +26,7 @@ export default function Home() {
       subName: "(Đường 48%)",
       category: "Nuôi Cấy Vi Sinh",
       weight: "5 lít / Can",
-      image: "/products/mat-ri-75.jpg", // Trò đổi tên file ảnh cho khớp nhé
+      image: "/products/mat-ri-75.jpg", 
       ingredients: "Đường (30-40% sucrose), Khoáng chất (K, Mg, Ca, Fe, Mn), Vitamin nhóm B (B1,B5,B6).",
       usage: [
         "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).",
@@ -38,15 +38,20 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       
-      {/* HEADER */}
+      {/* HEADER - CHỈ GIỮ LOGO NGUYÊN BẢN, BỎ CHỮ AGRI TEAM */}
       <header className="bg-white text-[#0A4D34] sticky top-0 z-50 shadow-sm border-b-4 border-[#0A4D34]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
           
-          <div className="flex items-center gap-3">
-            <div className="bg-[#f9fdfb] p-1.5 rounded-lg">
-              <Image src="/logo-agriteam.png" alt="Agriteam Logo" width={145} height={145} className="object-contain filter brightness-0 invert"/>
-            </div>
-            
+          {/* Khu vực Logo góc trái trên cùng */}
+          <div className="flex items-center">
+            <Image 
+              src="/logo-agriteam.png" // Trò lưu ý kiểm tra chính xác đuôi file .png hoặc .jpg trong thư mục public nhé
+              alt="Agriteam Logo" 
+              width={160} 
+              height={60} 
+              className="object-contain"
+              priority
+            />
           </div>
 
           <nav className="hidden md:flex gap-8 font-medium">
@@ -62,7 +67,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO SECTION - TÊN AGRI TEAM SIÊU TO */}
+      {/* HERO SECTION */}
       <section id="ve-chung-toi" className="bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-green-50 py-24 border-b-8 border-[#20B2AA]">
         <div className="max-w-6xl mx-auto text-center px-4">
           <div className="inline-flex items-center gap-2 bg-white text-[#0A4D34] border border-[#0A4D34] px-5 py-2 rounded-full text-sm font-bold mb-8 shadow-sm">
@@ -70,7 +75,6 @@ export default function Home() {
             <span>Nông Nghiệp Sạch - Nông Nghiệp Hữu Cơ</span>
           </div>
           
-          {/* Cụm tên công ty phân cấp thị giác */}
           <h2 className="text-xl md:text-3xl font-bold text-gray-600 mb-2 uppercase tracking-wide">
             Công Ty Cổ Phần Xuất Nhập Khẩu Thương Mại
           </h2>
@@ -89,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SẢN PHẨM SECTION - HIỆU ỨNG RÊ CHUỘT (HOVER) */}
+      {/* SẢN PHẨM SECTION - HIỆU ỨNG HOVER */}
       <section id="san-pham" className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-4xl font-black text-gray-900 mb-4">Mật Rỉ Đường Chuyên Dụng</h3>
@@ -99,13 +103,11 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {products.map((product) => (
-            // Khối cha chứa hiệu ứng hover (group)
             <div key={product.id} className="group relative w-full h-[500px] bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden cursor-pointer">
               
-              {/* MẶT TRƯỚC (Hiển thị khi không hover) */}
+              {/* MẶT TRƯỚC */}
               <div className="absolute inset-0 p-8 flex flex-col items-center justify-center transition-opacity duration-500 group-hover:opacity-0 bg-white z-10">
                 <div className="w-48 h-48 bg-amber-50 rounded-full flex items-center justify-center mb-8 border-4 border-amber-100 p-4">
-                   {/* Nếu đã có ảnh tách nền, đổi icon 🍯 thành thẻ <Image /> */}
                    <span className="text-7xl">🍯</span>
                 </div>
                 <h4 className="text-3xl font-black text-[#0A4D34] text-center">{product.name}</h4>
@@ -152,20 +154,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER CẬP NHẬT CHUẨN XÁC */}
+      {/* FOOTER */}
       <footer id="lien-he" className="bg-gray-900 text-gray-300 py-16 border-t-8 border-[#0A4D34]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
           
           <div className="space-y-6">
-            <h2 className="text-3xl font-black text-white tracking-widest">AGRI TEAM</h2>
+            <div className="bg-white p-2 rounded-xl inline-block">
+              <Image src="/logo-agriteam.png" alt="Agriteam Logo" width={140} height={50} className="object-contain"/>
+            </div>
             <div>
               <p className="text-gray-400 font-bold uppercase mb-1">Công Ty Cổ Phần Xuất Nhập Khẩu Thương Mại Agri Team</p>
               <p className="text-white bg-gray-800 inline-block px-3 py-1 rounded font-mono text-sm border border-gray-700">MST: 0313671366</p>
             </div>
-            <p className="leading-relaxed text-gray-400 pr-10">
-              Đồng hành cùng nhà nông và các doanh nghiệp trong việc cung cấp giải pháp nông nghiệp sạch, 
-              hữu cơ và xử lý môi trường bền vững.
-            </p>
           </div>
 
           <div className="space-y-6 md:pl-10">
