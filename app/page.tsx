@@ -107,15 +107,17 @@ export default function Home() {
               
               {/* MẶT TRƯỚC */}
               <div className="absolute inset-0 p-8 flex flex-col items-center justify-center transition-opacity duration-500 group-hover:opacity-0 bg-white z-10">
-                {/* Khung chứa ảnh sản phẩm thật */}
-                <div className="w-full h-92 w-92 relative mb-6 flex items-center justify-center overflow-hidden">
+                {/* Khung chứa ảnh sản phẩm thật - NÂNG CẤP KÍCH THƯỚC VÀ BO GÓC */}
+  <div className="relative w-72 h-72 mb-6 flex items-center justify-center overflow-hidden bg-gray-50 rounded-3xl border border-gray-100 shadow-sm">
     <Image 
       src={product.image} 
       alt={product.name} 
       fill
-      className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+      className="object-contain p-4 transition-transform duration-300 group-hover:scale-110 rounded-3xl"
     />
   </div>
+  
+  {/* ... Các phần hiển thị tên và quy cách giữ nguyên ... */}
                 <h4 className="text-3xl font-black text-[#0A4D34] text-center">{product.name}</h4>
                 <p className="text-lg font-bold text-amber-600 mt-2 mb-4">{product.subName}</p>
                 <span className="bg-gray-100 text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Quy cách: {product.weight}</span>
