@@ -13,7 +13,7 @@ export default function Home() {
       subName: "(Đường 45%)",
       category: "Xử Lý Nước Công Nghiệp",
       weight: "30 lít / Can",
-      image: "/products/mat-ri-70.jpg", 
+      image: "/products/matritrang.png", 
       ingredients: "Sucrose, glucose, fructose. Chất khô ~75% carbohydrate, Nước ~22%.",
       usage: [
         "Xử lý kỵ khí: Bổ sung cacbon cho vi sinh vật yếm khí phân hủy chất hữu cơ.",
@@ -26,7 +26,7 @@ export default function Home() {
       subName: "(Đường 48%)",
       category: "Nuôi Cấy Vi Sinh",
       weight: "5 lít / Can",
-      image: "/products/mat-ri-75.jpg", 
+      image: "/products/matritrang.png", 
       ingredients: "Đường (30-40% sucrose), Khoáng chất (K, Mg, Ca, Fe, Mn), Vitamin nhóm B (B1,B5,B6).",
       usage: [
         "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).",
@@ -107,9 +107,15 @@ export default function Home() {
               
               {/* MẶT TRƯỚC */}
               <div className="absolute inset-0 p-8 flex flex-col items-center justify-center transition-opacity duration-500 group-hover:opacity-0 bg-white z-10">
-                <div className="w-48 h-48 bg-amber-50 rounded-full flex items-center justify-center mb-8 border-4 border-amber-100 p-4">
-                   <span className="text-7xl">🍯</span>
-                </div>
+                {/* Khung chứa ảnh sản phẩm thật */}
+                <div className="w-full h-52 w-52 relative mb-6 flex items-center justify-center overflow-hidden">
+    <Image 
+      src={product.image} 
+      alt={product.name} 
+      fill
+      className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+    />
+  </div>
                 <h4 className="text-3xl font-black text-[#0A4D34] text-center">{product.name}</h4>
                 <p className="text-lg font-bold text-amber-600 mt-2 mb-4">{product.subName}</p>
                 <span className="bg-gray-100 text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Quy cách: {product.weight}</span>
