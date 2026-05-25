@@ -46,7 +46,7 @@ export default function Home() {
             <div className="bg-[#f9fdfb] p-1.5 rounded-lg">
               <Image src="/logo-agriteam.png" alt="Agriteam Logo" width={145} height={145} className="object-contain filter brightness-0 invert"/>
             </div>
-            <h1 className="text-2xl font-black tracking-tight">AGRI TEAM</h1>
+            
           </div>
 
           <nav className="hidden md:flex gap-8 font-medium">
