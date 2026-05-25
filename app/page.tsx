@@ -108,7 +108,7 @@ export default function Home() {
               {/* MẶT TRƯỚC */}
               <div className="absolute inset-0 p-8 flex flex-col items-center justify-center transition-opacity duration-500 group-hover:opacity-0 bg-white z-10">
                 {/* Khung chứa ảnh sản phẩm thật */}
-                <div className="w-full h-52 w-52 relative mb-6 flex items-center justify-center overflow-hidden">
+                <div className="w-full h-92 w-92 relative mb-6 flex items-center justify-center overflow-hidden">
     <Image 
       src={product.image} 
       alt={product.name} 
