@@ -25,14 +25,15 @@ export default function Home() {
     {
       id: 2,
       name: "Gạo Swarna Ấn Độ",
-      subName: "(Đường 48%)",
-      category: "Nuôi Cấy Vi Sinh",
-      weight: "5 lít / Can",
+      subName: "(5% tấm)",
+      category: "Gạo nhập khẩu",
+      weight: "20kg / bao",
       image: "/products/gao-swarna.jpg", 
-      ingredients: "Đường (30-40% sucrose), Khoáng chất (K, Mg, Ca, Fe, Mn), Vitamin nhóm B (B1,B5,B6).",
+      ingredients: "Moisture = 14% Broken = 05% Damage/Discolour:3% Chalky= 5% FM: 0.5% Avg length = 5.35-5.40 MM
+Smell = No of odour ,Mill Degree = well Milled ,Well Cleaned , Free from live/Death weevils ,Silky  & Sortex cargo",
       usage: [
-        "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).",
-        "Đóng vai trò là nguồn dinh dưỡng carbon thiết yếu để vi sinh vật (EM1, phân hữu cơ) phát triển mạnh mẽ.",
+        "Gạo Swarna hay còn biết đến với tên gọi gạo Mansuri là một trong những loại gạo Ấn Độ ngon, tốt nhất cho sức khỏe, đặc biệt là những người bị bệnh tiểu đường.",
+       
       ]
     },
   ];
