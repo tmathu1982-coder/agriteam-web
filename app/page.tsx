@@ -18,8 +18,8 @@ export default function Home() {
       usage: [
         "Xử lý kỵ khí: Bổ sung cacbon cho vi sinh vật yếm khí phân hủy chất hữu cơ.",
         "Bổ sung dinh dưỡng: Cung cấp dưỡng chất thiếu hụt trong nước thải để nâng cao hiệu quả xử lý.",
-        "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).
-        Đóng vai trò là nguồn dinh dưỡng carbon thiết yếu để vi sinh vật (EM1, phân hữu cơ) phát triển mạnh mẽ.",
+        "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).Đóng vai trò là nguồn dinh dưỡng carbon thiết yếu để vi sinh vật (EM1, phân hữu cơ) phát triển mạnh mẽ.",
+        
       ]
     },
     {
