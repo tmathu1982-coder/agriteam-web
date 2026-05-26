@@ -9,15 +9,17 @@ export default function Home() {
   const products = [
     {
       id: 1,
-      name: "Mật Rỉ Đường Brix 70%",
-      subName: "(Đường 45%)",
-      category: "Xử Lý Nước Công Nghiệp",
-      weight: "30 lít / Can",
+      name: "Mật Rỉ Đường Brix 73%",
+      subName: "(Đường 48%)",
+      category: "Nuôi cấy vi sinh-Xử Lý Nước Công Nghiệp",
+      weight: "5 lít / Can",
       image: "/products/matritrang.png", 
-      ingredients: "Sucrose, glucose, fructose. Chất khô ~75% carbohydrate, Nước ~22%.",
+      ingredients: "Đường (30-40% sucrose), Khoáng chất (K, Mg, Ca, Fe, Mn), Vitamin nhóm B (B1,B5,B6),Sucrose, glucose, fructose. Chất khô ~75% carbohydrate, Nước ~22%.",
       usage: [
         "Xử lý kỵ khí: Bổ sung cacbon cho vi sinh vật yếm khí phân hủy chất hữu cơ.",
         "Bổ sung dinh dưỡng: Cung cấp dưỡng chất thiếu hụt trong nước thải để nâng cao hiệu quả xử lý.",
+      "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).",
+        "Đóng vai trò là nguồn dinh dưỡng carbon thiết yếu để vi sinh vật (EM1, phân hữu cơ) phát triển mạnh mẽ.",
       ]
     },
     {
@@ -185,7 +187,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-[#20B2AA] flex-shrink-0" size={20}/>
-                <p>hcvn.thuytien@gmail.com</p>
+                <p>info@agriteam.com.vn</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-[#20B2AA] flex-shrink-0" size={20}/>
