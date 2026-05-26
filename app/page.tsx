@@ -29,12 +29,10 @@ export default function Home() {
       category: "Gạo nhập khẩu",
       weight: "20kg / bao",
       image: "/products/gao-swarna.jpg", 
-      ingredients: "Moisture = 14% Broken = 05% Damage/Discolour:3% Chalky= 5% FM: 0.5% Avg length = 5.35-5.40 MM
-Smell = No of odour ,Mill Degree = well Milled ,Well Cleaned , Free from live/Death weevils ,Silky  & Sortex cargo",
+      ingredients: "Moisture = 14% ,Broken = 05%, Damage/Discolour:3% ,Chalky= 5% FM: 0.5% ,Avg length = 5.35-5.40 MM,Smell = No of odour ,Mill Degree = well Milled ,Well Cleaned , Free from live/Death weevils ,Silky  & Sortex cargo",
       usage: [
         "Gạo Swarna hay còn biết đến với tên gọi gạo Mansuri là một trong những loại gạo Ấn Độ ngon, tốt nhất cho sức khỏe, đặc biệt là những người bị bệnh tiểu đường.",
-       
-      ]
+        ]
     },
   ];
 
