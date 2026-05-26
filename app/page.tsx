@@ -14,9 +14,9 @@ export default function Home() {
       category: "Nuôi cấy vi sinh-Xử Lý Nước",
       weight: "5 lít / Can",
       image: "/products/matritrang.png", 
-      ingredients: "Đường (30-40% sucrose),K, Mg, Ca, Fe, Mn, Vitamin(B1,B5,B6),glucose, fructose. Chất khô ~75% carbohydrate, Nước ~22%.",
+      ingredients: "Sucrose,K, Mg, Ca, Fe, Mn,B1,B5,B6,glucose, fructose. Chất khô ~75% carbohydrate, Nước ~22%.",
       usage: [
-        "Bổ sung dinh dưỡng: Cung cấp dưỡng chất thiếu hụt trong nước thải để nâng cao hiệu quả xử lý.Xử lý kỵ khí: Bổ sung cacbon cho vi sinh vật yếm khí phân hủy chất hữu cơ.",
+        "Bổ sung dinh dưỡng: Cung cấp dưỡng chất thiếu hụt trong nước thải để nâng cao hiệu quả xử lý.Bổ sung cacbon cho vi sinh vật yếm khí phân hủy chất hữu cơ.",
         "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).Đóng vai trò là nguồn dinh dưỡng carbon thiết yếu để vi sinh vật (EM1, phân hữu cơ) phát triển mạnh mẽ.",
       ]
     },
