@@ -26,7 +26,7 @@ export default function Home() {
       id: 2,
       name: "Gạo Swarna Ấn Độ",
       subName: "(5% tấm)",
-      category: "Gạo nhập khẩu",
+      category: "Gạo làm bún-Suất ăn công nghiệp",
       weight: "20kg / bao",
       image: "/products/gao-swarna.jpg", 
       ingredients: "Moisture = 14% ,Broken = 05%, Damage/Discolour:3% ,Chalky= 5% FM: 0.5% ,Avg length = 5.35-5.40 MM,Smell = No of odour ,Mill Degree = well Milled ,Well Cleaned , Free from live/Death weevils ,Silky  & Sortex cargo",
