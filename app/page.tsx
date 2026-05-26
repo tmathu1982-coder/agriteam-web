@@ -22,11 +22,11 @@ export default function Home() {
     },
     {
       id: 2,
-      name: "Mật Rỉ Đường Brix 75%",
+      name: "Gạo Swarna Ấn Độ",
       subName: "(Đường 48%)",
       category: "Nuôi Cấy Vi Sinh",
       weight: "5 lít / Can",
-      image: "/products/matritrang.png", 
+      image: "/products/gao-swarna.jpg", 
       ingredients: "Đường (30-40% sucrose), Khoáng chất (K, Mg, Ca, Fe, Mn), Vitamin nhóm B (B1,B5,B6).",
       usage: [
         "Pha loãng với nước (tỷ lệ 1:10 hoặc 1:20).",
