@@ -5,7 +5,7 @@ export default function Home() {
   const hotline = "0902590480";
   const hotlineDisplay = "0902.590.480";
 
-  // Dữ liệu 2 sản phẩm Mật rỉ đường
+  // Dữ liệu 2 sản phẩm
   const products = [
     {
       id: 1,
@@ -31,21 +31,19 @@ export default function Home() {
       ingredients: "Moisture = 14% ,Broken = 05%, Damage/Discolour:3% ,Chalky= 5% FM: 0.5% ,Avg length = 5.35-5.40 MM,Smell = No of odour ,Mill Degree = well Milled ,Well Cleaned , Free from live/Death weevils ,Silky  & Sortex cargo",
       usage: [
         "Gạo Swarna hay còn biết đến với tên gọi gạo Mansuri là một trong những loại gạo Ấn Độ ngon, tốt nhất cho sức khỏe, đặc biệt là những người bị bệnh tiểu đường.",
-        ]
+      ]
     },
   ];
 
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       
-      {/* HEADER - CHỈ GIỮ LOGO NGUYÊN BẢN, BỎ CHỮ AGRI TEAM */}
+      {/* HEADER */}
       <header className="bg-white text-[#0A4D34] sticky top-0 z-50 shadow-sm border-b-4 border-[#0A4D34]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
-          
-          {/* Khu vực Logo góc trái trên cùng */}
           <div className="flex items-center">
             <Image 
-              src="/logo-agriteam.png" // Trò lưu ý kiểm tra chính xác đuôi file .png hoặc .jpg trong thư mục public nhé
+              src="/logo-agriteam.png" 
               alt="Agriteam Logo" 
               width={160} 
               height={60} 
@@ -93,10 +91,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SẢN PHẨM SECTION - HIỆU ỨNG HOVER */}
+      {/* SẢN PHẨM SECTION */}
       <section id="san-pham" className="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h3 className="text-4xl font-black text-gray-900 mb-4">Mật Rỉ Đường Chuyên Dụng</h3>
+          <h3 className="text-4xl font-black text-gray-900 mb-4">Sản Phẩm Chuyên Dụng</h3>
           <p className="text-lg text-gray-600">Rê chuột vào sản phẩm để xem thông tin chi tiết và công dụng.</p>
           <div className="w-24 h-1.5 bg-[#20B2AA] mx-auto mt-6 rounded-full"></div>
         </div>
@@ -107,17 +105,15 @@ export default function Home() {
               
               {/* MẶT TRƯỚC */}
               <div className="absolute inset-0 p-8 flex flex-col items-center justify-center transition-opacity duration-500 group-hover:opacity-0 bg-white z-10">
-                {/* Khung chứa ảnh sản phẩm thật - NÂNG CẤP KÍCH THƯỚC VÀ BO GÓC */}
-  <div className="relative w-72 h-72 mb-6 flex items-center justify-center overflow-hidden bg-gray-50 rounded-3xl border border-gray-100 shadow-sm">
-    <Image 
-      src={product.image} 
-      alt={product.name} 
-      fill
-      className="object-contain p-4 transition-transform duration-300 group-hover:scale-110 rounded-3xl"
-    />
-  </div>
-  
-  {/* ... Các phần hiển thị tên và quy cách giữ nguyên ... */}
+                <div className="relative w-72 h-72 mb-6 flex items-center justify-center overflow-hidden bg-gray-50 rounded-3xl border border-gray-100 shadow-sm">
+                  <Image 
+                    src={product.image} 
+                    alt={product.name} 
+                    fill
+                    className="object-contain p-4 transition-transform duration-300 group-hover:scale-110 rounded-3xl"
+                  />
+                </div>
+                
                 <h4 className="text-3xl font-black text-[#0A4D34] text-center">{product.name}</h4>
                 <p className="text-lg font-bold text-amber-600 mt-2 mb-4">{product.subName}</p>
                 <span className="bg-gray-100 text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Quy cách: {product.weight}</span>
@@ -128,7 +124,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* MẶT SAU (Trượt lên khi hover) */}
+              {/* MẶT SAU */}
               <div className="absolute inset-0 bg-[#0A4D34] text-white p-8 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-20 flex flex-col justify-center">
                 <h4 className="text-2xl font-black text-amber-400 mb-2">{product.name} {product.subName}</h4>
                 <p className="text-green-100 mb-6 font-medium italic border-b border-green-700 pb-4">Dùng cho: {product.category}</p>
@@ -162,40 +158,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer id="lien-he" className="bg-gray-900 text-gray-300 py-16 border-t-8 border-[#0A4D34]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+      {/* FOOTER ĐÃ ĐƯỢC THU GỌN 1/2 */}
+      <footer id="lien-he" className="bg-gray-900 text-gray-300 py-8 border-t-8 border-[#0A4D34]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-6">
           
-          <div className="space-y-6">
-            <div className="bg-white p-2 rounded-xl inline-block">
-              <Image src="/logo-agriteam.png" alt="Agriteam Logo" width={140} height={50} className="object-contain"/>
+          {/* Cột trái: Thông tin công ty */}
+          <div className="space-y-3 text-center md:text-left md:w-1/2">
+            <div className="bg-white p-1.5 rounded-xl inline-block">
+              <Image src="/logo-agriteam.png" alt="Agriteam Logo" width={120} height={40} className="object-contain"/>
             </div>
             <div>
-              <p className="text-gray-400 font-bold uppercase mb-1">Công Ty Cổ Phần Xuất Nhập Khẩu Thương Mại Agri Team</p>
-              <p className="text-white bg-gray-800 inline-block px-3 py-1 rounded font-mono text-sm border border-gray-700">MST: 0313671366</p>
+              <p className="text-gray-400 font-bold uppercase text-sm mb-1">Công Ty Cổ Phần Xuất Nhập Khẩu Thương Mại Agri Team</p>
+              <p className="text-white bg-gray-800 inline-block px-2 py-0.5 rounded font-mono text-xs border border-gray-700">MST: 0313671366</p>
             </div>
           </div>
 
-          <div className="space-y-6 md:pl-10">
-            <h4 className="text-xl font-bold text-white border-b border-gray-700 pb-3">Thông Tin Liên Hệ</h4>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="text-[#20B2AA] mt-1 flex-shrink-0" size={20}/>
-                <p>Số 36, Đường D10, Khu Phố 6, Phường Phước Long, Thành phố Hồ Chí Minh, Việt Nam</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="text-[#20B2AA] flex-shrink-0" size={20}/>
-                <p>info@agriteam.com.vn</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="text-[#20B2AA] flex-shrink-0" size={20}/>
-                <p className="text-xl font-bold text-white">{hotlineDisplay}</p>
-              </div>
+          {/* Cột phải: Thông tin liên hệ */}
+          <div className="space-y-3 md:pl-10 md:w-1/2 text-sm">
+            <h4 className="text-base font-bold text-white border-b border-gray-700 pb-1 inline-block">Thông Tin Liên Hệ</h4>
+            <div className="flex items-start gap-3 justify-center md:justify-start">
+              <MapPin className="text-[#20B2AA] mt-0.5 flex-shrink-0" size={18}/>
+              <p className="leading-tight">Số 36, Đường D10, Khu Phố 6, Phường Phước Long, TP. Hồ Chí Minh</p>
+            </div>
+            <div className="flex items-center gap-3 justify-center md:justify-start">
+              <Mail className="text-[#20B2AA] flex-shrink-0" size={18}/>
+              <p>info@agriteam.com.vn</p>
+            </div>
+            <div className="flex items-center gap-3 justify-center md:justify-start">
+              <Phone className="text-[#20B2AA] flex-shrink-0" size={18}/>
+              <p className="text-lg font-bold text-white">{hotlineDisplay}</p>
             </div>
           </div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-gray-800 text-center text-sm text-gray-500">
+        {/* Bản quyền */}
+        <div className="max-w-7xl mx-auto px-4 mt-6 pt-4 border-t border-gray-800 text-center text-xs text-gray-500">
           <p>© {new Date().getFullYear()} AGRI TEAM. All rights reserved.</p>
         </div>
       </footer>
