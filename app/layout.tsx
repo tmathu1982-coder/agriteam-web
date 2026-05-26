@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Công Ty Cổ Phần Xuất Nhập Khẩu Thương Mại
 AGRI TEAM",
   icons: {
-    icon: "/logo-ariteam.png", // Lấy luôn cái logo trò đã bỏ vào thư mục public bài trước
+    icon: "/logo-agriteam.png", // Lấy luôn cái logo trò đã bỏ vào thư mục public bài trước
   },
 };
 
