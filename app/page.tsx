@@ -11,7 +11,7 @@ export default function Home() {
       id: 1,
       name: "Mật Rỉ Đường Brix 75%",
       subName: "(Đường 48%)",
-      category: "Nuôi cấy vi sinh-Xử Lý Nước Công Nghiệp",
+      category: "Xử Lý Nước Công Nghiệp",
       weight: "5 lít / Can",
       image: "/products/matritrang.png", 
       ingredients: "Đường (30-40% sucrose), Khoáng chất (K, Mg, Ca, Fe, Mn), Vitamin nhóm B (B1,B5,B6),Sucrose, glucose, fructose. Chất khô ~75% carbohydrate, Nước ~22%.",
