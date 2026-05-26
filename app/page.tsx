@@ -9,7 +9,7 @@ export default function Home() {
   const products = [
     {
       id: 1,
-      name: "Mật Rỉ Đường Brix 73%",
+      name: "Mật Rỉ Đường Brix 75%",
       subName: "(Đường 48%)",
       category: "Nuôi cấy vi sinh-Xử Lý Nước Công Nghiệp",
       weight: "5 lít / Can",
